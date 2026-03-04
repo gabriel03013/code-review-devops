@@ -1,29 +1,151 @@
-/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.escondido{
-    display: none !important;
+body {
+  background-color: #f7f3ee;
+  color: #2c2c2c;
+  min-height: 100vh;
 }
 
-#novoOverlay {
-  position: fixed;
-  inset: 0; 
-  background-color: rgba(0, 0, 0, 0.6);
-  display: none; 
-  justify-content: center;
-  align-items: center;
-  z-index: 999; 
+header {
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px 50px;
+  background: linear-gradient(135deg, #1a6b3c 0%, #008c45 50%, #1a6b3c 100%);
 }
 
-#entradaSecreta {
-  background: white;
-  color: black;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  position: relative;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+header p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  position: relative;
+}
+
+main {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  border-left: 5px solid #008c45;
+  position: relative;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #008c45;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+#aluno {
+  border-left-color: #ce2b37;
+}
+
+#aluno h2 {
+  color: #ce2b37;
+}
+
+#aluno p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+#aluno strong {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+#lugar {
+  border-left-color: #008c45;
+}
+
+#lugar p {
+  font-size: 0.925rem;
+  color: #555;
+  line-height: 1.85;
+  margin-bottom: 10px;
+}
+
+#lugar p:first-of-type {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #008c45;
+  margin-bottom: 16px;
+}
+
+#lugar strong {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+
+#curiosidades {
+  border-left-color: #f0b429;
+}
+
+#curiosidades h2 {
+  color: #c8920a;
+}
+
+#curiosidades ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#curiosidades ul li {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.8;
+  padding-left: 24px;
+  position: relative;
+}
+
+#curiosidades ul li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #f0b429;
+  font-size: 0.7rem;
+}
+
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background: #2c2c2c;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
 }
