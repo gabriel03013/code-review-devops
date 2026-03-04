@@ -1,0 +1,29 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.escondido{
+    display: none !important;
+}
+
+#novoOverlay {
+  position: fixed;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+}
+
+#entradaSecreta {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
